@@ -1,6 +1,6 @@
 # frozen_string_literal: true
 
-require File.expand_path("./anime-rails/version", __FILE__)
+require "anime-rails/version"
 
 module Anime
   module Rails

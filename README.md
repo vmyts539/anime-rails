@@ -1,9 +1,4 @@
 # Anime for rails asset pipeline
-<h1 align="center">
-  <a href="https://animejs.com"><img src="/documentation/assets/img/animejs-v3-header-animation.gif" width="250"/></a>
-  <br>
-  anime.js
-</h1>
 
 [Anime](https://github.com/juliangarnier/anime) is a lightweight JavaScript animation library with a simple, yet powerful API. It works with CSS properties, SVG, DOM attributes and JavaScript Objects.
 
@@ -22,14 +17,14 @@ The `anime-rails` gem integrates the `Anime` javascript library with Rails asset
 
 ## Usage
 
-### Install select2-rails gem
+### Install anime-rails gem
 
 Add `anime-rails` to your Gemfile and run `bundle install`:
 
 	gem "anime-rails"
 
-### Include select2-rails javascript assets
+### Include anime-rails javascript assets
 
 Add the following to your `app/assets/javascripts/application.js`:
 
-	//= require anime
+	//= require anime.min

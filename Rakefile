@@ -7,9 +7,7 @@ RuboCop::RakeTask.new
 
 task default: :rubocop
 
-
-# require File.expand_path('../lib/anime-rails/source_file', __FILE__)
-require_relative 'lib/anime-rails/source_file'
+require File.expand_path('../lib/anime-rails/source_file', __FILE__)
 
 desc "Update with juliangarnier's anime Library"
 task "update-anime" do
