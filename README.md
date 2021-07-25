@@ -1,43 +1,35 @@
-# Anime::Rails
+# Anime for rails asset pipeline
+<h1 align="center">
+  <a href="https://animejs.com"><img src="/documentation/assets/img/animejs-v3-header-animation.gif" width="250"/></a>
+  <br>
+  anime.js
+</h1>
 
-Welcome to your new gem! In this directory, you'll find the files you need to be able to package up your Ruby library into a gem. Put your Ruby code in the file `lib/anime/rails`. To experiment with that code, run `bin/console` for an interactive prompt.
+[Anime](https://github.com/juliangarnier/anime) is a lightweight JavaScript animation library with a simple, yet powerful API. It works with CSS properties, SVG, DOM attributes and JavaScript Objects.
 
-TODO: Delete this and the text above, and describe your gem
+The `anime-rails` gem integrates the `Anime` javascript library with Rails asset pipeline
 
-## Installation
 
-Add this line to your application's Gemfile:
+<h4 align="center">JavaScript animation engine | <a href="https://animejs.com" target="_blank">animejs.com</a></h4>
 
-```ruby
-gem 'anime-rails'
-```
+<p align="center">
+  <a href="https://www.npmjs.com/package/animejs" rel="nofollow"><img src="https://camo.githubusercontent.com/011820ee25bf1d3ddaf635d869903b98eccaeae7/68747470733a2f2f696d672e736869656c64732e696f2f6e706d2f762f616e696d656a732e7376673f7374796c653d666c61742d737175617265" alt="npm version" data-canonical-src="https://img.shields.io/npm/v/animejs.svg?style=flat-square" style="max-width:100%;"></a>
+</p>
 
-And then execute:
-
-    $ bundle install
-
-Or install it yourself as:
-
-    $ gem install anime-rails
+<p align="center">
+  <a href="#getting-started">Getting started</a>&nbsp;|&nbsp;<a href="#documentation">Documentation</a>&nbsp;|&nbsp;<a href="#demos-and-examples">Demos and examples</a>&nbsp;|&nbsp;<a href="#browser-support">Browser support</a>
+</p>
 
 ## Usage
 
-TODO: Write usage instructions here
+### Install select2-rails gem
 
-## Development
+Add `anime-rails` to your Gemfile and run `bundle install`:
 
-After checking out the repo, run `bin/setup` to install dependencies. You can also run `bin/console` for an interactive prompt that will allow you to experiment.
+	gem "anime-rails"
 
-To install this gem onto your local machine, run `bundle exec rake install`. To release a new version, update the version number in `version.rb`, and then run `bundle exec rake release`, which will create a git tag for the version, push git commits and the created tag, and push the `.gem` file to [rubygems.org](https://rubygems.org).
+### Include select2-rails javascript assets
 
-## Contributing
+Add the following to your `app/assets/javascripts/application.js`:
 
-Bug reports and pull requests are welcome on GitHub at https://github.com/[USERNAME]/anime-rails. This project is intended to be a safe, welcoming space for collaboration, and contributors are expected to adhere to the [code of conduct](https://github.com/[USERNAME]/anime-rails/blob/main/CODE_OF_CONDUCT.md).
-
-## License
-
-The gem is available as open source under the terms of the [MIT License](https://opensource.org/licenses/MIT).
-
-## Code of Conduct
-
-Everyone interacting in the Anime::Rails project's codebases, issue trackers, chat rooms and mailing lists is expected to follow the [code of conduct](https://github.com/[USERNAME]/anime-rails/blob/main/CODE_OF_CONDUCT.md).
+	//= require anime
